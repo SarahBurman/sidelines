@@ -1,0 +1,72 @@
+.header {
+    height: 56px;
+    width: inherit;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #0C1026;
+   
+    .logo {
+        height: 13.9px;
+        width: 86.95px;
+    }
+
+    .user{
+        position: absolute;
+    right: 28.37px;
+    }
+}
+
+.title{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.input{
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    input[type="text"] {   
+        box-sizing: border-box;
+        height: 58.27px;
+        width: 335.27px;
+        border: 2.64px solid #5F67D4;
+        background-color: #242944;
+        color: #B5C6FF;
+        font-size: 19.77px;
+        padding-left: 2%;
+        border-radius: 2.64px;
+    }
+}
+
+.error{
+    margin-top: 33px;
+    margin-bottom: 33px;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #D35867;
+    font-size: 19.77px;
+    line-height: 27.68px;
+    text-align: center;
+}
+
+.submit{
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    button{
+        height: 59.34px;
+        width: 330px;
+        background-color: #6163DB;
+        border-radius: 2.64%;
+        color: #FFFFFF;
+        font-size: 19.77px;
+        letter-spacing: 1.32px;
+        text-align: center;
+    }
+}
