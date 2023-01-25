@@ -1,71 +1,73 @@
 .header {
-    height: 56px;
-    width: inherit;
+    height: 3.5rem;
+    width: 100%;
+    
+    display: grid;
     align-items: center;
-    display: flex;
-    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    
     background-color: #0C1026;
-   
+
     .logo {
-        height: 13.9px;
-        width: 86.95px;
+        height: 33%;
+        grid-column: 2;
     }
 
     .user{
-        position: absolute;
-        right: 28.37px;
+        grid-column: 3;
+        justify-self: end;
+        padding-right: 2rem;
     }
 }
 
-.title{
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.body{
     margin-top: 5%;
-    margin-bottom: 5%;
-}
 
-.input{
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-    input[type="text"] {   
-        box-sizing: border-box;
-        height: 58.27px;
-        width: 335.27px;
-        border: 2.64px solid #5F67D4;
-        background-color: #242944;
-        color: #B5C6FF;
-        font-size: 19.77px;
-        padding-left: 2%;
-        border-radius: 7px;
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 5%;
     }
-}
 
-.message{
-    margin-top: 33px;
-    margin-bottom: 33px;
-    height: 20px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 19.77px;
-    line-height: 27.68px;
-    text-align: center;
-}
+    .login-form{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        
+        width: 50%;
+        margin: 0 25%;
+            
+        input[type="text"] {   
+            padding: 0.5rem 1ch;
+            box-sizing: border-box;
+           
+            border: 2px solid #5F67D4;
+            border-radius: 8px;
+            
+            background-color: #242944;
+            color: #B5C6FF;
+        }
 
-.submit{
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-    button{
-        height: 59.34px;
-        width: 330px;
-        background-color: #6163DB;
-        border-radius: 7px;
-        color: #FFFFFF;
-        font-size: 19.77px;
-        letter-spacing: 1.32px;
-        text-align: center;
+        .message {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            &:empty::before{
+                content: "\00a0";
+            }
+        }
+    
+        
+        .submit {
+            border-radius: 8px;
+            background-color: #6163DB;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        
     }
 }

@@ -1,7 +1,11 @@
-<div class="header"><img class="logo" src ="../../assets/Logo.svg" alt="My Happy SVG"/> <img class="user" src ="../../assets/Avatar.png" alt="My Happy SVG"/></div>
-<div class="body">
-    <div class="title" ><img src ="../../assets/Headline.png" alt="My Happy SVG"/></div>
-    <div class="input"> <input type="text" [formControl] = "userName"></div>
-    <div  [ngStyle]="{'color':error ? 'red' : 'green' }" class="message">{{message|async}}</div>
-    <div class="submit"><button (click)="submit()">submit</button></div>
+<div class="page">
+    <div class="header"><img class="logo" src ="../../assets/Logo.svg" alt="My Happy SVG"/> <img class="user" src ="../../assets/Avatar.png" alt="My Happy SVG"/></div>
+    <div class="body">
+        <div class="title" ><img src ="../../assets/Headline.png" alt="My Happy SVG"/></div>
+        <div class="login-form">    
+            <input type="text" [formControl] = "userName">
+            <div  [ngStyle]="{'color':error ? 'red' : 'green' }" class="message">{{message|async}}</div>
+            <button class="submit" (click)="submit()">submit</button>
+        </div>
+    </div>
 </div>
