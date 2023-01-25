@@ -13,7 +13,7 @@
 
     .user{
         position: absolute;
-    right: 28.37px;
+        right: 28.37px;
     }
 }
 
@@ -38,18 +38,17 @@
         color: #B5C6FF;
         font-size: 19.77px;
         padding-left: 2%;
-        border-radius: 2.64px;
+        border-radius: 7px;
     }
 }
 
-.error{
+.message{
     margin-top: 33px;
     margin-bottom: 33px;
     height: 20px;
     align-items: center;
     display: flex;
     justify-content: center;
-    color: #D35867;
     font-size: 19.77px;
     line-height: 27.68px;
     text-align: center;
@@ -63,7 +62,7 @@
         height: 59.34px;
         width: 330px;
         background-color: #6163DB;
-        border-radius: 2.64%;
+        border-radius: 7px;
         color: #FFFFFF;
         font-size: 19.77px;
         letter-spacing: 1.32px;

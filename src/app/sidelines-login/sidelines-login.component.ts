@@ -14,6 +14,7 @@ export class SidelinesLoginComponent {
     updateOn: 'blur'
   });
   message: BehaviorSubject<string> = new BehaviorSubject("");
+  error = false;
 
   constructor(private usersService: UsersService){}
 
@@ -21,10 +22,12 @@ export class SidelinesLoginComponent {
     if(this.userName.value){
       if(this.usersService.isUserExist(this.userName.value)){
         this.message.next('user already exist');
+        this.error = true;
       }
       else{
         this.usersService.addUser(this.userName.value);
         this.message.next('user signed up');
+        this.error=false;
       }
     }
   }
