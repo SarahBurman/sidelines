@@ -2,6 +2,6 @@
 <div class="body">
     <div class="title" ><img src ="../../assets/Headline.png" alt="My Happy SVG"/></div>
     <div class="input"> <input type="text" [formControl] = "userName"></div>
-    <div class="error">{{message|async}}</div>
+    <div  [ngStyle]="{'color':error ? 'red' : 'green' }" class="message">{{message|async}}</div>
     <div class="submit"><button (click)="submit()">submit</button></div>
 </div>
